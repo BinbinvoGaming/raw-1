@@ -1997,9 +1997,14 @@ Tabes:Label("WELCOME TO PSXSE HUB")
 Tabes:Line()
 Tabes:Note("Script Hubs")
 
-Tabes:Button("Ripper Hub", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/hajibeza/RIPPER-HUB/main/King%20Leagacy"))();	
+Tabes:Button("King Legacy Script", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/xDepressionx/Free-Script/main/KingLegacy.lua")();
 end)
+
+Tabes:Button("Ripper Hub", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/hajibeza/RIPPER-HUB/main/King%20Leagacy"))();	
+end)
+
 Tabes:Button("Maru Hub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Marux-Script/MaruHub/main/KingLegzy.lua"))();	
 end)
@@ -2008,9 +2013,7 @@ Tabes:Button("River Hub", function()
 loadstring(game:HttpGet("http://riverhub.xyz/" .. tostring(game.PlaceId) .. ".lua"))()
 end);	
 end)
-Tabes:Button("King Legacy Script", function()
-    loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/KingLegacy.lua")();
-end)
+
 
 Tabes:Note("")
 Tabes:Note("")
