@@ -1,6 +1,7 @@
 -- BLACKTRAP V1.0 FIXED_BUILD --
 -- REALEASE DATE ON 17/02/2022 --
 -- MADE By WANZ --
+-- MODIFIED BY: AINYX TOKISAN --
 -- (WINDOWS AND MOBILE VERSION) --
 local Players = game:GetService("Players")
 local player = Players.LocalPlayer
