@@ -2068,7 +2068,7 @@ Tabes:Note("")
 Tabes:Note("")
 
 -- 7TH TABS --
-local Tabes = Win:Tab("Natural D. Hub")
+local Tabes = Win:Tab("•Natural D. Hub")
 Tabes:Label("WELCOME TO PSXSE HUB")
 Tabes:Line()
 Tabes:Note("Script Hubs")
