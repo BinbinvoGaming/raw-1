@@ -161,12 +161,12 @@ function Blacklib:Window(gametitle)
     
     CloseImage.Name = "CloseImage"
     CloseImage.Parent = Points
-    CloseImage.AnchorPoint = Vector2.new(-5,20)
+    CloseImage.AnchorPoint = Vector2.new(-5,80)
     CloseImage.AutoButtonColor = true
     CloseImage.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
     CloseImage.BackgroundTransparency = 1.000
     CloseImage.Size = UDim2.new(0, 0, 0, 0)
-    CloseImage.Position = UDim2.new(0, 370, 0, 170)
+    CloseImage.Position = UDim2.new(0, 0, 0,0)
     CloseImage.Image = "rbxassetid://8666601749"
     CloseImage.ImageColor3 = Color3.fromRGB(250, 250, 250)
     
@@ -1851,7 +1851,7 @@ local Win = Blacklib:Window("  Main Gui")
 local Tabes = Win:Tab("•Main")
 Tabes:Note("")
 Tabes:Note("Were working this Frame sorry for inconvinience ")
-Tabes:Note("")
+Tabes:Note("😝 AINYX WORKING...")
 Tabes:Note("")
 Tabes:Note("")
 Tabes:Note("")
@@ -1866,7 +1866,7 @@ Tabes:Note("")
 Tabes:Note("")
 
 -- Tab --
-local Tabes = Win:Tab("•Pet Sim X Hub")
+local Tabes = Win:Tab("•Pet Sim X")
 
 
 Tabes:Label("WELCOME TO PSXSE HUB")
@@ -1920,7 +1920,7 @@ Tabes:Note("")
 
 --New Tabs--
 
-local Tabes = Win:Tab("•Blox Fruit Hub")
+local Tabes = Win:Tab("•Blox Fruit")
 Tabes:Label("WELCOME TO PSXSE HUB")
 Tabes:Line()
 Tabes:Note("Script Hubs")
@@ -1968,7 +1968,7 @@ Tabes:Note("")
 
 
 -- Second New Tabs --
-local Tabes = Win:Tab("•Da Hood Hub")
+local Tabes = Win:Tab("•Da Hood")
 Tabes:Label("WELCOME TO PSXSE HUB")
 Tabes:Line()
 Tabes:Note("Script Hubs")
@@ -1988,7 +1988,7 @@ Tabes:Note("")
 
 -- Third New Tabs --
 
-local Tabes = Win:Tab("•King Legacy Hub")
+local Tabes = Win:Tab("•King Legacy")
 Tabes:Label("WELCOME TO PSXSE HUB")
 Tabes:Line()
 Tabes:Note("Script Hubs")
@@ -1997,8 +1997,12 @@ Tabes:Button("Ripper Hub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/hajibeza/RIPPER-HUB/main/King%20Leagacy"))();	
 end)
 Tabes:Button("Maru Hub", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Marux-Script/MaruHub/main/KingLegzy.lua"))()
-;	
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Marux-Script/MaruHub/main/KingLegzy.lua"))();	
+end)
+Tabes:Button("River Hub", function()
+    pcall(function()
+loadstring(game:HttpGet("http://riverhub.xyz/" .. tostring(game.PlaceId) .. ".lua"))()
+end);	
 end)
 Tabes:Note("")
 Tabes:Note("")
@@ -2009,7 +2013,7 @@ Tabes:Note("")
 
 -- Fourth New Tabs --
 
-local Tabes = Win:Tab("•Shindo Hub")
+local Tabes = Win:Tab("•Shindo Life")
 Tabes:Label("WELCOME TO PSXSE HUB")
 Tabes:Line()
 Tabes:Note("Script Hubs")
@@ -2034,13 +2038,25 @@ Tabes:Note("")
 Tabes:Note("")
 
 -- 5TH TABS --
-local Tabes = Win:Tab("•Parkour Hub")
+local Tabes = Win:Tab("•Parkour")
 Tabes:Label("WELCOME TO PSXSE HUB")
 Tabes:Line()
 Tabes:Note("Script Hubs")
 
 Tabes:Button("Parkour Hub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/LegoHacks/Parkour/main/Main.lua"))();	
+end)
+
+Tabes:Button("Auto Grab Bag", function()
+    for i,v in pairs(workspace:GetChildren()) do
+    if v:FindFirstChild("Rarity") then
+        if v.Dropped.Value == false then
+            game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = v.Main.CFrame
+            print("BAG!!! POGGERS")
+            wait(1)
+        end
+    end
+end;	
 end)
 
 Tabes:Note("")
@@ -2051,13 +2067,21 @@ Tabes:Note("")
 Tabes:Note("")
 
 -- 6TH TABS --
-local Tabes = Win:Tab("•Arsenal Hub")
+local Tabes = Win:Tab("•Arsenal")
 Tabes:Label("WELCOME TO PSXSE HUB")
 Tabes:Line()
 Tabes:Note("Script Hubs")
 
-Tabes:Button("Arsenal Hub", function()
+Tabes:Button("Unknown Script", function()
     function getplrsname() for i,v in pairs(game:GetChildren()) do if v.ClassName == "Players" then return v.Name end end end local players = getplrsname() local plr = game[players].LocalPlayer coroutine.resume(coroutine.create(function() while wait(1) do coroutine.resume(coroutine.create(function() for _,v in pairs(game[players]:GetPlayers()) do if v.Name ~= plr.Name and v.Character then v.Character.RightUpperLeg.CanCollide = false v.Character.RightUpperLeg.Transparency = 10 v.Character.RightUpperLeg.Size = Vector3.new(21,21,21) v.Character.LeftUpperLeg.CanCollide = false v.Character.LeftUpperLeg.Transparency = 10 v.Character.LeftUpperLeg.Size = Vector3.new(21,21,21) v.Character.HeadHB.CanCollide = false v.Character.HeadHB.Transparency = 10 v.Character.HeadHB.Size = Vector3.new(21,21,21) v.Character.HumanoidRootPart.CanCollide = false v.Character.HumanoidRootPart.Transparency = 10 v.Character.HumanoidRootPart.Size = Vector3.new(21,21,21) end end end)) end end));	
+end)
+
+Tabes:Button("Bolts Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Main", true))();
+end)
+
+Tabes:Button("Arsenal Mods", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/YJmkfmeN" ,true))();
 end)
 
 Tabes:Note("")
@@ -2068,7 +2092,7 @@ Tabes:Note("")
 Tabes:Note("")
 
 -- 7TH TABS --
-local Tabes = Win:Tab("•Natural D. Hub")
+local Tabes = Win:Tab("•Natural Disaster")
 Tabes:Label("WELCOME TO PSXSE HUB")
 Tabes:Line()
 Tabes:Note("Script Hubs")
