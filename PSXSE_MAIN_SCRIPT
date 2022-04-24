@@ -2257,3 +2257,38 @@ Tabes:Note("")
 Tabes:Note("")
 Tabes:Note("")
 Tabes:Note("")
+
+-- 10TH TABS --
+local Tabes = Win:Tab("•Ninja Legends")
+Tabes:Label("WELCOME TO PSXSE HUB")
+Tabes:Line()
+Tabes:Note("Script Hubs")
+
+Tabes:Button("Unknown Ninja Legends", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/41"))();	
+end)
+
+Tabes:Note("")
+Tabes:Note("")
+Tabes:Note("")
+Tabes:Note("")
+Tabes:Note("")
+Tabes:Note("")
+
+-- 11TH TABS --
+local Tabes = Win:Tab("•MM2")
+Tabes:Label("WELCOME TO PSXSE HUB")
+Tabes:Line()
+Tabes:Note("Script Hubs")
+
+Tabes:Button("Vynixus's MM2 OP SCRIPTS", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/41"))();	
+end)
+
+Tabes:Note("")
+Tabes:Note("")
+Tabes:Note("")
+Tabes:Note("")
+Tabes:Note("")
+Tabes:Note("")
+
