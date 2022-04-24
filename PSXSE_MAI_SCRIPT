@@ -161,7 +161,7 @@ function Blacklib:Window(gametitle)
     
     CloseImage.Name = "CloseImage"
     CloseImage.Parent = Points
-    CloseImage.AnchorPoint = Vector2.new(-0.20,-0.20)
+    CloseImage.AnchorPoint = Vector2.new(-5,20)
     CloseImage.AutoButtonColor = true
     CloseImage.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
     CloseImage.BackgroundTransparency = 1.000
