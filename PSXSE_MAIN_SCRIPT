@@ -1998,9 +1998,6 @@ Tabes:Label("WELCOME TO PSXSE HUB")
 Tabes:Line()
 Tabes:Note("Script Hubs")
 
-Tabes:Button("King Legacy Script", function()
-    loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/KingLegacy.lua")();	
-end)
 Tabes:Button("Ripper Hub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/hajibeza/RIPPER-HUB/main/King%20Leagacy"))();	
 end)
