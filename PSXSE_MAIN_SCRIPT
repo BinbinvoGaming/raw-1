@@ -1988,8 +1988,7 @@ Tabes:Note("")
 Tabes:Note("")
 Tabes:Note("")
 Tabes:Note("")
-Tabes:Note("")
-Tabes:Note("")
+
 
 -- Third New Tabs --
 
@@ -2013,8 +2012,6 @@ Tabes:Button("King Legacy Script", function()
     loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/KingLegacy.lua")();
 end)
 
-Tabes:Note("")
-Tabes:Note("")
 Tabes:Note("")
 Tabes:Note("")
 Tabes:Note("")
