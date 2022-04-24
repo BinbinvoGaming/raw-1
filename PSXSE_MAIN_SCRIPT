@@ -2004,7 +2004,7 @@ Tabes:Button("Ripper Hub", function()
 end)
 
 Tabes:Button("King Legacy Script", function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/xDepressionx/Free-Script/main/KingLegacy.lua")();
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/xDepressionx/Free-Script/main/KingLegacy.lua"))();
 end)
 
 Tabes:Button("Maru Hub", function()
