@@ -1855,8 +1855,12 @@ Tabes:Note("")
 Tabes:Note("Were working this Frame sorry for inconvinience ")
 Tabes:Note("😝 AINYX WORKING...")
 Tabes:Note("")
+Tabes:Note("Discord Server CopyLink")
 Tabes:Note("")
-Tabes:Note("")
+Tabes:Button("copy", function()
+    setclipboard("https://discord.gg/BGTc7A7YyE") ;
+end)
+
 Tabes:Note("Credits: ")
 Tabes:Note("		- Special Thanks for BlackTrap Hub Script Source")
 Tabes:Note("		- Special Thanks Other free Script Hubs in this PSXSE Hub")
