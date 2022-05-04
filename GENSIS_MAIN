@@ -1988,6 +1988,10 @@ Tabes:Button("Lazer Hub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Lazerxl/overlazerxkaito-nahee/main/README.md"))();
 end)
 
+Tabes:Button("Ren Hub Mobile", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/SHAREHACK/bloxfruit/main/free'))();
+end)
+
 Tabes:Button("Ren Hub PC/Mobile", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/SHAREHACK/script/main/renhuball'))();
 end)
