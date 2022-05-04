@@ -1909,6 +1909,10 @@ Tabes:Button("Project Meow Hub", function()
     loadstring(game:HttpGet"https://rawscripts.net/raw/Project-Meow_421")();
 end)
 
+Tabes:Button("Nexus Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GwnStefano/NexusHub/main/Main", true))();
+end)
+
 Tabes:Button("FullHover Board", function()
     local tbl = require(game.ReplicatedStorage.Framework.Modules.Client["4 | Save"]).Get()
 tbl.Hoverboards = {}
@@ -1921,6 +1925,7 @@ tbl.EquippedHoverboard = board
 getsenv(game.Players.LocalPlayer.PlayerScripts.Scripts.GUIs.Hoverboards).Update()
 end;
 end)
+
 
 
 
@@ -2051,6 +2056,11 @@ loadstring(game:HttpGet("http://riverhub.xyz/" .. tostring(game.PlaceId) .. ".lu
 end);	
 end)
 
+Tabes:Button("Nexus Hub [BUGGY]", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GwnStefano/NexusHub/main/Main", true))();
+end)
+
+
 
 Tabes:Note("")
 Tabes:Note("")
@@ -2131,6 +2141,11 @@ end)
 Tabes:Button("Arsenal Mods", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/YJmkfmeN" ,true))();
 end)
+
+Tabes:Button("Nexus Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GwnStefano/NexusHub/main/Main", true))();
+end)
+
 
 Tabes:Note("")
 Tabes:Note("")
@@ -9446,6 +9461,49 @@ Tabes:Note("")
 Tabes:Note("")
 
 -- 13TH TABS --
+local Tabes = Win:Tab("•K.A.T.")
+Tabes:Label("WELCOME TO B_Genesis")
+Tabes:Line()
+Tabes:Note("Script Hubs")
+
+Tabes:Button("Dark Hub", function()
+    loadstring(game:HttpGet("http://darkhub.xyz/remote-script.lua", true))();	
+end)
+Tabes:Button("KAT | Sinister Gui", function()
+    loadstring(Game:HttpGet("https://gist.githubusercontent.com/qp39rh421984y812/d59f1517d9ed447698dcdbf97bd91b02/raw/360823c8df903d52d2d089a90b3e6106191f8df8/Katmonke"))();	
+end)
+Tabes:Button("KAT OP Gui", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/PPg2YJar", true))();	
+end)
+
+Tabes:Button("Nexus Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GwnStefano/NexusHub/main/Main", true))();	
+end)
+
+Tabes:Note("")
+Tabes:Note("")
+Tabes:Note("")
+Tabes:Note("")
+Tabes:Note("")
+Tabes:Note("")
+
+-- 14TH TABS --
+local Tabes = Win:Tab("•The RAKE.")
+Tabes:Label("WELCOME TO B_Genesis")
+Tabes:Line()
+Tabes:Note("Script Hubs")
+Tabes:Button("ADMIN COMMANDS", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/artas01/artas01/main/TheRakeRemastered_byHerades"))();	
+end)
+
+Tabes:Note("")
+Tabes:Note("")
+Tabes:Note("")
+Tabes:Note("")
+Tabes:Note("")
+Tabes:Note("")
+
+-- 15TH TABS --
 local Tabes = Win:Tab("•On Working...")
 Tabes:Label("WELCOME TO B_Genesis")
 Tabes:Line()
