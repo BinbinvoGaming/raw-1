@@ -2042,9 +2042,10 @@ Tabes:Button("ChariotsWare", function()
     loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Rippeed/DaHoodinary/main/chariotsware"))();	
 end)
 
-Tabes:Button("Enclose Scripts", function()
+Tabes:Button("Enclosed Hub", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Pvpahh/enclosed/main/enclosed'))();	
 end)
+
 
 Tabes:Note("")
 Tabes:Note("")
