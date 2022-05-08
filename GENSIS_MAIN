@@ -2046,6 +2046,10 @@ Tabes:Button("Enclosed Hub", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Pvpahh/enclosed/main/enclosed'))();	
 end)
 
+Tabes:Button("Vault Paste", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/gxC0siL2'))();	
+end)
+
 
 Tabes:Note("")
 Tabes:Note("")
@@ -9525,6 +9529,10 @@ Tabes:Line()
 Tabes:Note("Script Hubs")
 Tabes:Button("ADMIN COMMANDS", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/artas01/artas01/main/TheRakeRemastered_byHerades"))();	
+end)
+
+Tabes:Button("The Rake | Synapse Edition", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/TvaYiRxt"))();	
 end)
 
 Tabes:Note("")
