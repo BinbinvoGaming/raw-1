@@ -2001,6 +2001,22 @@ Tabes:Button("Ren Hub PC/Mobile", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/SHAREHACK/script/main/renhuball'))();
 end)
 
+Tabes:Button("NetNa Hub", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/NinoGod/NetnaYay/8d21ce23346c500c93bb8b4a71f7791e4058a70b/startload.lua'))();
+end)
+
+Tabes:Button("ATR Hub PC/Mobile", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/ATR",true))();
+end)
+
+Tabes:Button("Zerex Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/sasaff94/Zerex-HUB-BF/main/README.md"))();
+end)
+
+Tabes:Button("META WARE", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/x2FIWz/SCRIPT/main/MOBILE/METAWARE.lua'))();
+end)
+
 Tabes:Note("")
 Tabes:Note("")
 
@@ -2024,6 +2040,10 @@ end)
 
 Tabes:Button("ChariotsWare", function()
     loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Rippeed/DaHoodinary/main/chariotsware"))();	
+end)
+
+Tabes:Button("Enclose Scripts", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Pvpahh/enclosed/main/enclosed'))();	
 end)
 
 Tabes:Note("")
@@ -8971,8 +8991,18 @@ Tabes:Line()
 Tabes:Note("Script Hubs")
 
 Tabes:Button("Vynixus's MM2 OP SCRIPTS", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/41"))();	
+    loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)();	
 end)
+
+Tabes:Button("Eclipse Hub", function()
+    local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+;	
+end)
+
+Tabes:Button("OP SCRIPTS", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Drifter0507/scripts/main/mm2", true))();	
+end)
+
 
 Tabes:Note("")
 Tabes:Note("")
