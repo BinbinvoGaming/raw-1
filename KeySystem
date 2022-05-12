@@ -1,0 +1,56 @@
+-- Gui --
+-- Version 1.1 --
+
+-- Instances --
+
+local Tutorial = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local HubTitle = Instance.new("TextBox")
+local Submit = Instance.new("TextButton")
+local Input = Instance.new("TextBox")
+local Exit = Instance.new("TextButton")
+
+-- Properties --
+
+Tutorial.Name = "Tutorial"
+Tutorial.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Tutorial.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = Tutorial
+main.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
+main.Position = UDim2.new(0.10, 0, 0.03, 0)
+main.Size = UDim2.new(0, 206, 0, 135)
+
+HubTitle.Name = "Gui"
+HubTitle.Parent = main
+HubTitle.Text = 'B Genesis V 1.1'
+HubTitle.Position = UDim2.new(0.25, 0, 0.05, 0)
+HubTitle.TextColor3 = Color3.fromRGB(999, 999, 999)
+
+
+Submit.Name = "Submit"
+Submit.Parent = main
+Submit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Submit.Position = UDim2.new(0.015, 0, 0.55, 0)
+Submit.Size = UDim2.new(0, 200, 0, 50)
+Submit.Font = Enum.Font.SourceSans
+Submit.Text = 'Enter Valid Key'
+Submit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Submit.TextSize = 15.000
+Submit.MouseButton1Down:connect(function()
+	if Input.Text == "a" then
+		main.Visible = false
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/raw-scriptpastebin/raw/main/B_Genesis'))()
+	end
+end)
+
+Input.Name = "Input"
+Input.Parent = main
+Input.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Input.Position = UDim2.new(0.2, 0, 0.20, 0)
+Input.Size = UDim2.new(0, 120, 0, 20)
+Input.Font = Enum.Font.SourceSans
+Input.Text = ""
+Input.TextColor3 = Color3.fromRGB(0, 0, 0)
+Input.TextSize = 11.000
