@@ -9,6 +9,7 @@ local HubTitle = Instance.new("TextBox")
 local Submit = Instance.new("TextButton")
 local Input = Instance.new("TextBox")
 local Exit = Instance.new("TextButton")
+local GetKey = Instance.new("TextButton")
 
 -- Properties --
 
@@ -20,7 +21,7 @@ main.Name = "main"
 main.Parent = Tutorial
 main.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
 main.Position = UDim2.new(0.10, 0, 0.03, 0)
-main.Size = UDim2.new(0, 206, 0, 135)
+main.Size = UDim2.new(0, 206, 0, 100)
 
 HubTitle.Name = "Gui"
 HubTitle.Parent = main
@@ -28,18 +29,31 @@ HubTitle.Text = 'B Genesis V 1.1'
 HubTitle.Position = UDim2.new(0.25, 0, 0.05, 0)
 HubTitle.TextColor3 = Color3.fromRGB(999, 999, 999)
 
+Exit.Name = "Exit"
+Exit.Parent = main
+Exit.Text = '×'
+Exit.Position = UDim2.new(0.925, 0, 0.05, 0)
+Exit.Size = UDim2.new(0, 10, 0, 10)
+Exit.TextColor3 = Color3.fromRGB(255, 0, 0)
+Exit.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
+Exit.TextSize = 11.000
+Exit.MouseButton1Down:connect(function()
+	if main.Visible == true then
+		main.Visible = false
+	end
+end)
 
 Submit.Name = "Submit"
 Submit.Parent = main
 Submit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Submit.Position = UDim2.new(0.015, 0, 0.55, 0)
-Submit.Size = UDim2.new(0, 200, 0, 50)
+Submit.Position = UDim2.new(0.85, 0, 0.225, 0)
+Submit.Size = UDim2.new(0, 15, 0, 15)
 Submit.Font = Enum.Font.SourceSans
-Submit.Text = 'Enter Valid Key'
+Submit.Text = '✓'
 Submit.TextColor3 = Color3.fromRGB(0, 0, 0)
 Submit.TextSize = 15.000
 Submit.MouseButton1Down:connect(function()
-	if Input.Text == "a" then
+	if Input.Text == "BETA" then
 		main.Visible = false
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/raw-scriptpastebin/raw/main/B_Genesis'))()
 	end
@@ -54,3 +68,16 @@ Input.Font = Enum.Font.SourceSans
 Input.Text = ""
 Input.TextColor3 = Color3.fromRGB(0, 0, 0)
 Input.TextSize = 11.000
+
+GetKey.Name= "GetKey"
+GetKey.Parent = main
+GetKey.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GetKey.Position = UDim2.new(0.2, 0, 0.55, 0)
+GetKey.Size = UDim2.new(0, 120, 0, 20)
+GetKey.Font = Enum.Font.SourceSans
+GetKey.Text = 'Copy Get Key Link'
+GetKey.TextColor3 = Color3.fromRGB(0, 0, 0)
+GetKey.TextSize = 11.000
+GetKey.MouseButton1Down:connect(function()
+	setclipboard("https://discord.gg/BGTc7A7YyE")
+end)
