@@ -1926,7 +1926,13 @@ getsenv(game.Players.LocalPlayer.PlayerScripts.Scripts.GUIs.Hoverboards).Update(
 end;
 end)
 
+Tabes:Button("Unknown Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/HazeNx/Euphoria/main/EuphoriaHUB.lua"))();
+end)
 
+Tabes:Button("SG 195", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/SG1975/main/hohoPJ.lua'))();
+end)
 
 
 
@@ -1941,6 +1947,10 @@ local Tabes = Win:Tab("•Blox Fruit")
 Tabes:Label("WELCOME TO B_Genesis")
 Tabes:Line()
 Tabes:Note("Script Hubs")
+
+Tabes:Button("Auto Farm Chest", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Cesare0328/my-scripts/main/fxss%20bf.lua"))();
+end)
 
 Tabes:Button("HoHo Hub", function()
 loadstring(game:HttpGet"https://raw.githubusercontent.com/acsu1234/HOHO_H/main/Loading_UI")();
@@ -9543,6 +9553,15 @@ Tabes:Note("")
 Tabes:Note("")
 
 -- 15TH TABS --
+local Tabes = Win:Tab("•YBA.")
+Tabes:Label("WELCOME TO B_Genesis")
+Tabes:Line()
+Tabes:Note("Script Hubs")
+Tabes:Button("KOLGY GUI", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/kolgie/YBA-GUI/main/yba-gui-obfuscated.lua"))();	
+end)
+
+-- 16TH TABS --
 local Tabes = Win:Tab("•On Working...")
 Tabes:Label("WELCOME TO B_Genesis")
 Tabes:Line()
