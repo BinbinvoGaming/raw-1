@@ -55,7 +55,7 @@ Submit.TextSize = 15.000
 Submit.MouseButton1Down:connect(function()
 	if Input.Text == "BETA" then
 		main.Visible = false
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/raw-scriptpastebin/raw/main/B_Genesis'))()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/raw-scriptpastebin/raw/main/GENSIS_MAIN'))()
 	end
 end)
 
