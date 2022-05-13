@@ -2027,6 +2027,10 @@ Tabes:Button("META WARE", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/x2FIWz/SCRIPT/main/MOBILE/METAWARE.lua'))();
 end)
 
+Tabes:Button("SG 195", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/SG1975/main/hohoPJ.lua'))();
+end)
+
 Tabes:Note("")
 Tabes:Note("")
 
