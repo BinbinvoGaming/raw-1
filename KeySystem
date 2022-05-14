@@ -9,7 +9,11 @@ local HubTitle = Instance.new("TextBox")
 local Submit = Instance.new("TextButton")
 local Input = Instance.new("TextBox")
 local Exit = Instance.new("TextButton")
+local Key = Instance.new("TextBox")
 local GetKey = Instance.new("TextButton")
+local WrongKey = Instance.new("Frame")
+local WrongKeyText = Instance.new("TextBox")
+local WrongOk = Instance.new("TextButton")
 
 -- Properties --
 
@@ -22,12 +26,21 @@ main.Parent = Tutorial
 main.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
 main.Position = UDim2.new(0.10, 0, 0.03, 0)
 main.Size = UDim2.new(0, 206, 0, 100)
+main.Active = true
+main.Draggable = true
 
 HubTitle.Name = "Gui"
 HubTitle.Parent = main
 HubTitle.Text = 'B Genesis V 1.1'
-HubTitle.Position = UDim2.new(0.25, 0, 0.05, 0)
+HubTitle.Position = UDim2.new(0.25, 0, 0.08, 0)
 HubTitle.TextColor3 = Color3.fromRGB(999, 999, 999)
+
+
+Key.Name = "Key"
+Key.Parent = main
+Key.Text = 'Key:'
+Key.Position = UDim2.new(0.125, 0, 0.30, 0)
+Key.TextColor3 = Color3.fromRGB(999, 999, 999)
 
 Exit.Name = "Exit"
 Exit.Parent = main
@@ -56,6 +69,8 @@ Submit.MouseButton1Down:connect(function()
 	if Input.Text == "BETA" then
 		main.Visible = false
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/raw-scriptpastebin/raw/main/GENSIS_MAIN'))()
+	else 
+		WrongKey.Visible = true
 	end
 end)
 
@@ -79,5 +94,33 @@ GetKey.Text = 'Copy Get Key Link'
 GetKey.TextColor3 = Color3.fromRGB(0, 0, 0)
 GetKey.TextSize = 11.000
 GetKey.MouseButton1Down:connect(function()
-	setclipboard("https://discord.gg/BGTc7A7YyE")
+	setclipboard("https://discord.gg/QZQgNQNATp")
+end)
+
+WrongKey.Name= "Wrong Key"
+WrongKey.Parent = Tutorial
+WrongKey.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
+WrongKey.Position = UDim2.new(0.315, 0, 0.045, 0)
+WrongKey.Size = UDim2.new(0, 100, 0, 75)
+WrongKey.Visible = false
+WrongKey.Active = true
+WrongKey.Draggable = true
+
+WrongKeyText.Name = "WrongKeyText"
+WrongKeyText.Parent = WrongKey
+WrongKeyText.Text = 'Incorrect Key'
+WrongKeyText.Position = UDim2.new(0.525, 0, 0.4, 0)
+WrongKeyText.TextColor3 = Color3.fromRGB(999, 999, 999)
+
+WrongOk.Name = "Ok"
+WrongOk.Parent = WrongKey
+WrongOk.Text = 'Ok'
+WrongOk.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WrongOk.Position = UDim2.new(0.35, 0, 0.6, 0)
+WrongOk.Size = UDim2.new(0, 30, 0, 15)
+WrongOk.Font = Enum.Font.SourceSans
+WrongOk.TextSize = 11.000
+WrongOk.TextColor3 = Color3.fromRGB(1, 1, 1)
+WrongOk.MouseButton1Down:connect(function()
+	WrongKey.Visible = false
 end)
