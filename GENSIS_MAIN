@@ -1859,15 +1859,19 @@ Tabes:Note("")
 Tabes:Note("Were working this Frame sorry for inconvinience ")
 Tabes:Note("😝 AINYX WORKING...")
 Tabes:Note("")
-Tabes:Note("Discord Server CopyLink")
-Tabes:Note("")
+Tabes:Note("Discord Server CopyLink:")
 Tabes:Button("copy", function()
     setclipboard("https://discord.gg/BGTc7A7YyE") ;
 end)
 
+Tabes:Note("Facebook Group CopyLink:")
+Tabes:Button("copy", function()
+    setclipboard("https://www.facebook.com/groups/5093376977421920") ;
+end)
+
 Tabes:Note("Credits: ")
 Tabes:Note("		- Special Thanks for BlackTrap Hub Script Source")
-Tabes:Note("		- Special Thanks Other free Script Hubs in this PSXSE Hub")
+Tabes:Note("		- Special Thanks Other free Script Hubs in this B Genesis Hub")
 Tabes:Note("")
 Tabes:Note("")
 Tabes:Note("")
