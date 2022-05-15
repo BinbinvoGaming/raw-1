@@ -1930,10 +1930,6 @@ getsenv(game.Players.LocalPlayer.PlayerScripts.Scripts.GUIs.Hoverboards).Update(
 end;
 end)
 
-Tabes:Button("Unknown Hub", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/HazeNx/Euphoria/main/EuphoriaHUB.lua"))();
-end)
-
 Tabes:Button("SG 195", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/SG1975/main/hohoPJ.lua'))();
 end)
@@ -2035,6 +2031,10 @@ Tabes:Button("SG 195", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/SG1975/main/hohoPJ.lua'))();
 end)
 
+Tabes:Button("Aaryn's Hub", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/jE85VHx8", true))();	
+end)
+
 Tabes:Note("")
 Tabes:Note("")
 
@@ -2068,6 +2068,13 @@ Tabes:Button("Vault Paste", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/gxC0siL2'))();	
 end)
 
+Tabes:Button("Bolts Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Main", true))();	
+end)
+
+Tabes:Button("Aaryn's Hub", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/jE85VHx8", true))();	
+end)
 
 Tabes:Note("")
 Tabes:Note("")
@@ -2193,6 +2200,9 @@ Tabes:Button("Nexus Hub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/GwnStefano/NexusHub/main/Main", true))();
 end)
 
+Tabes:Button("Aaryn's Hub", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/jE85VHx8", true))();	
+end)
 
 Tabes:Note("")
 Tabes:Note("")
@@ -9030,6 +9040,9 @@ Tabes:Button("OP SCRIPTS", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Drifter0507/scripts/main/mm2", true))();	
 end)
 
+Tabes:Button("Bolts Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Main", true))();	
+end)
 
 Tabes:Note("")
 Tabes:Note("")
@@ -9537,6 +9550,10 @@ Tabes:Button("Nexus Hub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/GwnStefano/NexusHub/main/Main", true))();	
 end)
 
+Tabes:Button("Bolts Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Main", true))();	
+end)
+
 Tabes:Note("")
 Tabes:Note("")
 Tabes:Note("")
@@ -9583,12 +9600,49 @@ Tabes:Button("Ro-Ghoul Script", function()
 end)
 
 Tabes:Button("Ro-Ghoul Main", function()
-    Script: loadstring(game:HttpGet("https://raw.githubusercontent.com/JRL-lav/Main/main/Ro-Ghoul"))();	
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/JRL-lav/Main/main/Ro-Ghoul"))();	
 end)
 
-
-
 -- 17TH TABS --
+local Tabes = Win:Tab("•Bed Wars")
+Tabes:Label("WELCOME TO B_Genesis")
+Tabes:Line()
+Tabes:Note("Script Hubs")
+Tabes:Button("Bolts Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Main", true))();	
+end)
+
+Tabes:Button("Aaryn's Hub", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/jE85VHx8", true))();	
+end)
+
+Tabes:Button("BedWarsMonkey Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeyScripts/main/BedWarsMonkey.lua"))();	
+end)
+
+-- 18TH TABS --
+local Tabes = Win:Tab("•Phantom Forces")
+Tabes:Label("WELCOME TO B_Genesis")
+Tabes:Line()
+Tabes:Note("Script Hubs")
+Tabes:Button("Bolts Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Main", true))();	
+end)
+
+Tabes:Button("Aaryn's Hub", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/jE85VHx8", true))();	
+end)
+
+-- 20TH TABS --
+local Tabes = Win:Tab("•Clicker Simulator")
+Tabes:Label("WELCOME TO B_Genesis")
+Tabes:Line()
+Tabes:Note("Script Hubs")
+Tabes:Button("Aaryn's Hub", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/jE85VHx8", true))();	
+end)
+
+-- 20TH TABS --
 local Tabes = Win:Tab("•On Working...")
 Tabes:Label("WELCOME TO B_Genesis")
 Tabes:Line()
