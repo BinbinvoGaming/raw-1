@@ -1934,6 +1934,9 @@ Tabes:Button("SG 195", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/SG1975/main/hohoPJ.lua'))();
 end)
 
+Tabes:Button("Unfair Hub", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))();	
+end)
 
 
 Tabes:Note("")
@@ -2076,6 +2079,11 @@ Tabes:Button("Aaryn's Hub", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/jE85VHx8", true))();	
 end)
 
+Tabes:Button("Unfair Hub", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))();	
+end)
+
+
 Tabes:Note("")
 Tabes:Note("")
 Tabes:Note("")
@@ -2203,6 +2211,11 @@ end)
 Tabes:Button("Aaryn's Hub", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/jE85VHx8", true))();	
 end)
+
+Tabes:Button("Unfair Hub", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))();	
+end)
+
 
 Tabes:Note("")
 Tabes:Note("")
@@ -9044,6 +9057,11 @@ Tabes:Button("Bolts Hub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Main", true))();	
 end)
 
+Tabes:Button("Unfair Hub", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))();	
+end)
+
+
 Tabes:Note("")
 Tabes:Note("")
 Tabes:Note("")
@@ -9554,6 +9572,10 @@ Tabes:Button("Bolts Hub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Main", true))();	
 end)
 
+Tabes:Button("Unfair Hub", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))();	
+end)
+
 Tabes:Note("")
 Tabes:Note("")
 Tabes:Note("")
@@ -9624,6 +9646,11 @@ Tabes:Button("BedWarsMonkey Hub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeyScripts/main/BedWarsMonkey.lua"))();	
 end)
 
+Tabes:Button("Unfair Hub", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))();	
+end)
+
+
 -- 18TH TABS --
 local Tabes = Win:Tab("•Phantom Forces")
 Tabes:Label("WELCOME TO B_Genesis")
@@ -9636,6 +9663,11 @@ end)
 Tabes:Button("Aaryn's Hub", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/jE85VHx8", true))();	
 end)
+
+Tabes:Button("Unfair Hub", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))();	
+end)
+
 
 -- 20TH TABS --
 local Tabes = Win:Tab("•Clicker Simulator")
