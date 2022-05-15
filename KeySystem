@@ -2,6 +2,7 @@
 -- Version 1.1 --
 
 -- Instances --
+local CoreGui = game:GetService("StarterGui")
 
 local Tutorial = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
@@ -71,6 +72,13 @@ Submit.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/raw-scriptpastebin/raw/main/GENSIS_MAIN'))()
 	else 
 		WrongKey.Visible = true
+		
+		CoreGui:SetCore("SendNotification", {
+			Title = "B Genesis V 1.1";
+			Text = "Wrong Key";
+			Duration = 5;
+			TextColor3 = Color3.fromRGB(255, 255, 255)
+		})
 	end
 end)
 
@@ -123,4 +131,5 @@ WrongOk.TextSize = 11.000
 WrongOk.TextColor3 = Color3.fromRGB(1, 1, 1)
 WrongOk.MouseButton1Down:connect(function()
 	WrongKey.Visible = false
+	
 end)
