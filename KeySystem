@@ -103,6 +103,13 @@ GetKey.TextColor3 = Color3.fromRGB(0, 0, 0)
 GetKey.TextSize = 11.000
 GetKey.MouseButton1Down:connect(function()
 	setclipboard("https://discord.gg/QZQgNQNATp")
+	
+	CoreGui:SetCore("SendNotification", {
+			Title = "B Genesis V 1.1";
+			Text = "Discord Link Copied";
+			Duration = 5;
+			TextColor3 = Color3.fromRGB(255, 255, 255)
+			})
 end)
 
 WrongKey.Name= "Wrong Key"
