@@ -162,14 +162,16 @@ function Blacklib:Window(gametitle)
     
     CloseImage.Name = "CloseImage"
     CloseImage.Parent = Points
-    CloseImage.AnchorPoint = Vector2.new(-5,80)
+    CloseImage.AnchorPoint = Vector2.new(0,0)
     CloseImage.AutoButtonColor = true
-    CloseImage.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
+    CloseImage.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
     CloseImage.BackgroundTransparency = 1.000
     CloseImage.Size = UDim2.new(0, 0, 0, 0)
-    CloseImage.Position = UDim2.new(0, 0, 0,0)
-    CloseImage.Image = "rbxassetid://8666601749"
-    CloseImage.ImageColor3 = Color3.fromRGB(250, 250, 250)
+    CloseImage.Position = UDim2.new(0.10, 0, 0.03, 0)
+    CloseImage.Image = "rbxassetid://9418055275"
+    CloseImage.ImageColor3 = Color3.fromRGB(250, 0, 0)
+	
+	
     
     ServerTime.Name = "ServerTime"
     ServerTime.Parent = WindowFrame
@@ -310,13 +312,13 @@ function Blacklib:Window(gametitle)
         if closetog == true then
             TweenService:Create(Shadow, TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.new(0, 0, 0, 0)}):Play()
             wait(.2)
-            TweenService:Create(CloseImage, TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.new(0, 70, 0, 70)}):Play()
-            TweenService:Create(CloseImage, TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Position = UDim2.new(0, -95, 0, 170)}):Play()
+            TweenService:Create(CloseImage, TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.new(0, 50, 0, 50)}):Play()
+            TweenService:Create(CloseImage, TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Position = UDim2.new(0, 100, 0, 0)}):Play()
             else
                 TweenService:Create(Shadow, TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.new(0, 0, 0, 0)}):Play()
                 wait(.2)
-                TweenService:Create(CloseImage, TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.new(0, 70, 0, 70)}):Play()
-                TweenService:Create(CloseImage, TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Position = UDim2.new(0, -95, 0, 170)}):Play()
+                TweenService:Create(CloseImage, TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.new(0, 50, 0, 50)}):Play()
+                TweenService:Create(CloseImage, TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Position = UDim2.new(0, 100, 0, 0)}):Play()
         end
         closetog = not closetog
     end)
@@ -420,7 +422,7 @@ function Blacklib:Window(gametitle)
     
     spawn(function()
         while task.wait() do
-            titlefunc:Refresh("") wait(.2) titlefunc:Refresh("B ") wait(.2) titlefunc:Refresh("B G") wait(.2) titlefunc:Refresh("B Ge") wait(.2) titlefunc:Refresh("B Gen") wait(.2) titlefunc:Refresh("B Gene") wait(.2) titlefunc:Refresh("B Genes") wait(.2) titlefunc:Refresh("B Genesi") wait(.2) titlefunc:Refresh("B Genesis") wait(.2) titlefunc:Refresh("B Genesis V") wait(.2) titlefunc:Refresh("B Genesis V1") wait(.9) titlefunc:Refresh("B Genesis V") wait(.2) titlefunc:Refresh("B Genesis") wait(.2) titlefunc:Refresh("B Genesi") wait(.2) titlefunc:Refresh("B Genes") wait(.2) titlefunc:Refresh("B Gene") wait(.2) titlefunc:Refresh("B Gen") wait(.2) titlefunc:Refresh("B Ge") wait(.2) titlefunc:Refresh("B G") wait(.2) titlefunc:Refresh("B") wait(.3)
+            titlefunc:Refresh("") wait(.2) titlefunc:Refresh("B ") wait(.2) titlefunc:Refresh("B G") wait(.2) titlefunc:Refresh("B Ge") wait(.2) titlefunc:Refresh("B Gen") wait(.2) titlefunc:Refresh("B Gene") wait(.2) titlefunc:Refresh("B Genes") wait(.2) titlefunc:Refresh("B Genesi") wait(.2) titlefunc:Refresh("B Genesis") wait(.2) titlefunc:Refresh("B Genesis V") wait(.2) titlefunc:Refresh("B Genesis V1") wait(.2) titlefunc:Refresh("B Genesis V1.") wait(.2) titlefunc:Refresh("B Genesis V1.1") wait(.9) titlefunc:Refresh("B Genesis V1.") wait(.2) titlefunc:Refresh("B Genesis V1") wait(.2) titlefunc:Refresh("B Genesis V") wait(.2) titlefunc:Refresh("B Genesis") wait(.2) titlefunc:Refresh("B Genesi") wait(.2) titlefunc:Refresh("B Genes") wait(.2) titlefunc:Refresh("B Gene") wait(.2) titlefunc:Refresh("B Gen") wait(.2) titlefunc:Refresh("B Ge") wait(.2) titlefunc:Refresh("B G") wait(.2) titlefunc:Refresh("B") wait(.3)
         end
     end)
     
@@ -2080,6 +2082,10 @@ Tabes:Note("Script Hubs")
 
 Tabes:Button("King Legacy Script", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/xDepressionx/Free-Script/main/KingLegacy.lua"))();
+end)
+
+Tabes:Button("HoHo Hub", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))();
 end)
 
 Tabes:Button("Ripper Hub", function()
@@ -9537,7 +9543,7 @@ Tabes:Note("")
 Tabes:Note("")
 
 -- 14TH TABS --
-local Tabes = Win:Tab("•The RAKE.")
+local Tabes = Win:Tab("•The RAKE")
 Tabes:Label("WELCOME TO B_Genesis")
 Tabes:Line()
 Tabes:Note("Script Hubs")
@@ -9557,7 +9563,7 @@ Tabes:Note("")
 Tabes:Note("")
 
 -- 15TH TABS --
-local Tabes = Win:Tab("•YBA.")
+local Tabes = Win:Tab("•YBA")
 Tabes:Label("WELCOME TO B_Genesis")
 Tabes:Line()
 Tabes:Note("Script Hubs")
@@ -9566,6 +9572,21 @@ Tabes:Button("KOLGY GUI", function()
 end)
 
 -- 16TH TABS --
+local Tabes = Win:Tab("•RO-Ghoul")
+Tabes:Label("WELCOME TO B_Genesis")
+Tabes:Line()
+Tabes:Note("Script Hubs")
+Tabes:Button("Ro-Ghoul Script", function()
+    loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/z4gs/scripts/master/Ro-Ghoul%20Auto%20Farm.lua")))();	
+end)
+
+Tabes:Button("Ro-Ghoul Main", function()
+    Script: loadstring(game:HttpGet("https://raw.githubusercontent.com/JRL-lav/Main/main/Ro-Ghoul"))();	
+end)
+
+
+
+-- 17TH TABS --
 local Tabes = Win:Tab("•On Working...")
 Tabes:Label("WELCOME TO B_Genesis")
 Tabes:Line()
