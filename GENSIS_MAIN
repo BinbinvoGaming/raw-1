@@ -9598,6 +9598,10 @@ Tabes:Button("Unfair Hub", function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))();	
 end)
 
+Tabes:Button("SoggyWare", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/SunkenMuch/Soggyware/main/Main',true))();	
+end)
+
 Tabes:Note("")
 Tabes:Note("")
 Tabes:Note("")
