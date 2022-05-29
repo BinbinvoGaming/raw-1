@@ -1537,4 +1537,8 @@ end)
 KAT:AddButton("SoggyWare", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/SunkenMuch/Soggyware/main/Main',true))();	
 end)
+
+KAT:AddButton("V.G Hub", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))();	
+end)
 	--------------------------------------------------------------------
