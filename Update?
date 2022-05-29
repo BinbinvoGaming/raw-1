@@ -273,10 +273,12 @@ Color = Info
             if input.KeyCode == bind then
                 if uihide == false then
                     uihide = true
-                    Main:TweenSize(UDim2.new(0, 0, 0, 0),"In","Quad",0.2,true)
+                    Main:TweenSize(UDim2.new(0, 0, 0, 0),"In","Quad",0.2,true);
+					Main.BorderSizePixel = 0
                 else
                     uihide = false
                     Main:TweenSize(UDim2.new(0, 600, 0, 350),"Out","Quad",0.2,true)
+					Main.BorderSizePixel = 2
                 end
             end
         end)
@@ -1026,10 +1028,10 @@ Color = Info
     Toggle.Size = UDim2.new(0, 50, 0, 50)
     Toggle.Font = Enum.Font.GothamBlack
 	Toggle.BorderColor3 = Color3.fromRGB(0, 0, 0)
-	Toggle.BorderSizePixel = 20
+	Toggle.BorderSizePixel = 0
 	Toggle.BackgroundTransparency = 0.9
 	Toggle.TextSize = 60.000
-    Toggle.TextColor3 = Color3.fromRGB(255, 255, 255)
+    Toggle.TextColor3 = Color3.fromRGB(999, 999, 999)
     Toggle.TextScaled = false
 	Toggle.TextWrapped = true
 	Toggle.Active = true
@@ -1037,6 +1039,7 @@ Color = Info
     Toggle.MouseButton1Down:connect(function()
         game:GetService("VirtualInputManager"):SendKeyEvent(true,277,false,game)
         game:GetService("VirtualInputManager"):SendKeyEvent(false,277,false,game)
+
     end)
 	
 	
@@ -1048,42 +1051,42 @@ Color = Info
                     wait(0.1) 
                     game:GetService('TweenService'):Create(
                         Toggle,TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut),
-                        {TextColor3 = Color3.fromRGB(255, 0, 0)}					
+                        {TextColor3 = Color3.fromRGB(999, 0, 0)}					
                     ):Play() 
                     wait(.5)            
                     game:GetService('TweenService'):Create(
                         Toggle,TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut),
-                        {TextColor3 = Color3.fromRGB(255, 155, 0)}
+                        {TextColor3 = Color3.fromRGB(999, 855, 0)}
                     ):Play() 
                     wait(.5)            
                     game:GetService('TweenService'):Create(
                         Toggle,TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut),
-                        {TextColor3 = Color3.fromRGB(255, 255, 0)}
+                        {TextColor3 = Color3.fromRGB(999, 999, 0)}
                     ):Play() 
                     wait(.5)            
                     game:GetService('TweenService'):Create(
                         Toggle,TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut),
-                        {TextColor3 = Color3.fromRGB(0, 255, 0)}
+                        {TextColor3 = Color3.fromRGB(0, 999, 0)}
                     ):Play() 
                     wait(.5)            
                     game:GetService('TweenService'):Create(
                         Toggle,TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut),
-                        {TextColor3 = Color3.fromRGB(0, 255, 255)}
+                        {TextColor3 = Color3.fromRGB(0, 999, 999)}
                     ):Play() 
                     wait(.5)            
                     game:GetService('TweenService'):Create(
                         Toggle,TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut),
-                        {TextColor3 = Color3.fromRGB(0, 155, 255)}
+                        {TextColor3 = Color3.fromRGB(0, 855, 999)}
                     ):Play() 
                     wait(.5)            
                     game:GetService('TweenService'):Create(
                         Toggle,TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut),
-                        {TextColor3 = Color3.fromRGB(255, 0, 255)}
+                        {TextColor3 = Color3.fromRGB(999, 0, 855)}
                     ):Play() 
                     wait(.5)            
                     game:GetService('TweenService'):Create(
                         Toggle,TweenInfo.new(1,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut),
-                        {TextColor3 = Color3.fromRGB(255, 0, 155)}
+                        {TextColor3 = Color3.fromRGB(999, 0, 855)}
                     ):Play() 
                     wait(.5)
                 end)
