@@ -135,7 +135,7 @@ Color = Info
         Page.BackgroundColor3 = Color3.fromRGB(1, 1, 1)
 		Page.BorderColor3 = Color3.fromRGB(255, 0, 0)
         Page.BorderSizePixel = 2
-        Page.BackgroundTransparency = 1.100
+        Page.BackgroundTransparency = 1.0
         Page.BorderSizePixel = 0
         Page.Size = UDim2.new(0, 125, 0, 350)
     
@@ -562,10 +562,11 @@ Color = Info
                 TextboxTitle.Size = UDim2.new(0, 300, 0, 30)
                 TextboxTitle.Font = Enum.Font.Gotham
                 TextboxTitle.Text = text
+				TextboxTitle.TextWrapped = false
                 TextboxTitle.TextColor3 = Color3.fromRGB(225, 225, 225)
                 TextboxTitle.TextSize = 11.000
                 TextboxTitle.TextXAlignment = Enum.TextXAlignment.Left
-    
+				
                 Textbox.Name = "Textbox"
                 Textbox.Parent = Textboxx
                 Textbox.BackgroundColor3 = Color3.fromRGB(30, 28, 39)
@@ -573,6 +574,7 @@ Color = Info
                 Textbox.Size = UDim2.new(0, 140, 0, 20)
                 Textbox.Font = Enum.Font.Gotham
                 Textbox.Text = holder
+				Textbox.TextWrapped = true
                 Textbox.TextColor3 = Color3.fromRGB(225, 225, 225)
                 Textbox.TextSize = 11.000
     
@@ -1031,7 +1033,7 @@ Color = Info
 	Toggle.BorderSizePixel = 0
 	Toggle.BackgroundTransparency = 0.9
 	Toggle.TextSize = 60.000
-    Toggle.TextColor3 = Color3.fromRGB(999, 999, 999)
+    Toggle.TextColor3 = Color3.fromRGB(999, 0, 0)
     Toggle.TextScaled = false
 	Toggle.TextWrapped = true
 	Toggle.Active = true
@@ -1044,7 +1046,7 @@ Color = Info
 	
 	
 	
-	Toggle.Text = "㊁" 
+	Toggle.Text = "㊀" 
         spawn(function()
             while wait() do
                 pcall(function()
@@ -1119,6 +1121,7 @@ Color = Info
 	local KAT = RenUi:AddTab("Knife Ability Test","")
     --------------------------------------------------------------------
     Main:AddSeperator("Main")
+	
     
     Time = Main:AddLabel("Server Time")
     
@@ -1150,6 +1153,26 @@ Color = Info
 	Main:AddButton("[COPY] Facebook Group",function()
         setclipboard("https://www.facebook.com/groups/5093376977421920") ;
     end)
+	
+	Main:AddButton("FPS Boost",function()
+		loadstring(game:HttpGet"https://raw.githubusercontent.com/raw-scriptpastebin/FE/main/FPS_BOOST")();
+    end)
+	
+	Main:AddButton("Rejoin Server",function()
+		loadstring(game:HttpGet"https://raw.githubusercontent.com/raw-scriptpastebin/FE/main/Rejoin_Server")();
+    end)
+	
+	Main:AddButton("Low Server Hop",function()
+        local module = loadstring(game:HttpGet"https://raw.githubusercontent.com/raw-scriptpastebin/FE/main/Server_Hop_Settings")()
+		module:Teleport(game.PlaceId) ;
+    end)
+	
+	Main:AddLabel("")
+	Main:AddSeperator("Settings")
+	Main:AddLabel("")
+	local Current = Main:AddLabel("Hide GUI: Press [INSERT]")
+	local Current = Main:AddLabel("")
+	
 	Main:AddButton("Destroy | Delete GUI", function()
         local ui = game.CoreGui:FindFirstChild("UlLib")
         if ui then
@@ -1157,6 +1180,7 @@ Color = Info
 			Toggle.Visible = false
         end
     end)
+	
 	
 	--------------------------------------------------------------------
 	BloxFruit:AddSeperator("Scripts")
