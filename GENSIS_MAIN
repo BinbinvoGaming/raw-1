@@ -447,7 +447,7 @@ Color = Info
                 local Toggle = Instance.new("TextButton")
                 Toggle.Name = "Toggle"
                 Toggle.Parent = ScrollTab
-                Toggle.BackgroundColor3 = Color3.fromRGB(50, 48, 59)
+                Toggle.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
                 Toggle.BackgroundTransparency = 0.1
                 Toggle.BorderSizePixel = 0
                 Toggle.AutoButtonColor = false
@@ -520,12 +520,15 @@ Color = Info
                     if toggled == false then
                         toggled = true
                         ToggleImage2.Visible = true
+						
                         ToggleImage2:TweenSize(UDim2.new(0, 21, 0, 21),"In","Quad",0.1,true)
+						
                     else
                         toggled = false
+						
                         ToggleImage2:TweenSize(UDim2.new(0, 0, 0, 0),"In","Quad",0.1,true)
                         wait(0.1)
-                        ToggleImage2.Visible = false
+						
                     end
                     callback(toggled)
                 end)
@@ -534,6 +537,7 @@ Color = Info
                     ToggleImage2.Visible = true
                     ToggleImage2:TweenSize(UDim2.new(0, 21, 0, 21),"In","Quad",0.1,true)
                     toggled = true
+					
                     callback(toggled)
                 end
             end
@@ -1119,7 +1123,10 @@ Color = Info
 	local TheRake = RenUi:AddTab("The Rake","")
 	local PhantomForces = RenUi:AddTab("Phantom Forces","")
 	local KAT = RenUi:AddTab("Knife Ability Test","")
+	local TheMimic = RenUi:AddTab("The MIMIC","")
     --------------------------------------------------------------------
+	
+	
     Main:AddSeperator("Main")
 	
     
@@ -1145,7 +1152,152 @@ Color = Info
 	local Current = Main:AddLabel("Crdts : MST")
 	local Current = Main:AddLabel("Work by : Ainxy Tokisan")
 	local Current = Main:AddLabel("Special Thanks For All Script SOURCE")
+	Main:AddLabel("")
 	
+	--------------------------------------------------------------------	
+	
+	Main:AddSeperator("Free Fe's Script")
+	
+	Main:AddButton("Universal ESP wALLHACK",false,function(value)
+		loadstring(game:HttpGet"https://raw.githubusercontent.com/raw-scriptpastebin/FE/main/UNIVERSAL_ESP")();
+	end)
+	--------------------------------------------------------------------
+	Main:AddButton("ESP + Auto Aim + Hud Button: [P]",false,function(value)
+		loadstring(game:HttpGet"https://raw.githubusercontent.com/raw-scriptpastebin/FE/main/Wallhack_Aim_Esp_Hud",false)()
+	end)
+	--------------------------------------------------------------------
+	Main:AddButton("Walk Speed 80%",function()
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 80;
+    end)
+	--------------------------------------------------------------------
+	Main:AddButton("Infinite Jump",false,function(value)
+		loadstring(game:HttpGet"https://raw.githubusercontent.com/raw-scriptpastebin/FE/main/Infinite_Jump")();
+	end)
+	--------------------------------------------------------------------
+	spawn(function()
+        pcall(function()
+            game:GetService("RunService").Stepped:Connect(function()
+                if _G.NoClip then
+                    for _, v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+                        if v:IsA("BasePart") then
+                            v.CanCollide = false    
+                        end
+                    end
+                end
+            end)
+        end)
+    end)
+	
+	
+	Main:AddToggle("No Clip",false,function(value)
+        _G.NoClip = value
+    end)
+	
+	--------------------------------------------------------------------
+	function fly()
+        local mouse=game:GetService("Players").LocalPlayer:GetMouse''
+        localplayer=game:GetService("Players").LocalPlayer
+        game:GetService("Players").LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+        local torso = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
+        local speedSET=25
+        local keys={a=false,d=false,w=false,s=false}
+        local e1
+        local e2
+        local function start()
+            local pos = Instance.new("BodyPosition",torso)
+            local gyro = Instance.new("BodyGyro",torso)
+            pos.Name="EPIXPOS"
+            pos.maxForce = Vector3.new(math.huge, math.huge, math.huge)
+            pos.position = torso.Position
+            gyro.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+            gyro.CFrame = torso.CFrame
+            repeat
+                    wait()
+                    localplayer.Character.Humanoid.PlatformStand=true
+                    local new=gyro.CFrame - gyro.CFrame.p + pos.position
+                    if not keys.w and not keys.s and not keys.a and not keys.d then
+                    speed=1
+                    end
+                    if keys.w then
+                    new = new + workspace.CurrentCamera.CoordinateFrame.lookVector * speed
+                    speed=speed+speedSET
+                    end
+                    if keys.s then
+                    new = new - workspace.CurrentCamera.CoordinateFrame.lookVector * speed
+                    speed=speed+speedSET
+                    end
+                    if keys.d then
+                    new = new * CFrame.new(speed,0,0)
+                    speed=speed+speedSET
+                    end
+                    if keys.a then
+                    new = new * CFrame.new(-speed,0,0)
+                    speed=speed+speedSET
+                    end
+                    if speed>speedSET then
+                    speed=speedSET
+                    end
+                    pos.position=new.p
+                    if keys.w then
+                    gyro.CFrame = workspace.CurrentCamera.CoordinateFrame*CFrame.Angles(-math.rad(speed*15),0,0)
+                    elseif keys.s then
+                    gyro.CFrame = workspace.CurrentCamera.CoordinateFrame*CFrame.Angles(math.rad(speed*15),0,0)
+                    else
+                    gyro.CFrame = workspace.CurrentCamera.CoordinateFrame
+                    end
+            until not Fly
+            if gyro then 
+                    gyro:Destroy() 
+            end
+            if pos then 
+                    pos:Destroy() 
+            end
+            flying=false
+            localplayer.Character.Humanoid.PlatformStand=false
+            speed=0
+        end
+        e1=mouse.KeyDown:connect(function(key)
+            if not torso or not torso.Parent then 
+                    flying=false e1:disconnect() e2:disconnect() return 
+            end
+            if key=="w" then
+                keys.w=true
+            elseif key=="s" then
+                keys.s=true
+            elseif key=="a" then
+                keys.a=true
+            elseif key=="d" then
+                keys.d=true
+            end
+        end)
+        e2=mouse.KeyUp:connect(function(key)
+            if key=="w" then
+                keys.w=false
+            elseif key=="s" then
+                keys.s=false
+            elseif key=="a" then
+                keys.a=false
+            elseif key=="d" then
+                keys.d=false
+            end
+        end)
+        start()
+    end
+	
+	Main:AddToggle("Fly",false,function(value)
+        Fly = value
+    end)
+    
+    spawn(function()
+        while wait() do
+            pcall(function()
+                if Fly then
+                    fly()
+                end
+            end)
+        end
+    end)
+	--------------------------------------------------------------------
 	
 	Main:AddButton("[COPY] Discord Server",function()
         setclipboard("https://discord.gg/BGTc7A7YyE") ;
@@ -1564,5 +1716,12 @@ end)
 
 KAT:AddButton("V.G Hub", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))();	
+end)
+	--------------------------------------------------------------------
+	--------------------------------------------------------------------
+	TheMimic:AddSeperator("Scripts")
+	
+	TheMimic:AddButton("The Mimic (Use Inside the Game) [Monster Esp/Door Ecp/Full Bright]", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/NCaKSm3N"))();	
 end)
 	--------------------------------------------------------------------
