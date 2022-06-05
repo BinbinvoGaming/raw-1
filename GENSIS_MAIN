@@ -1156,7 +1156,7 @@ Color = Info
 	
 	--------------------------------------------------------------------	
 	
-	Main:AddSeperator("Free Fe's Script")
+	Main:AddSeperator("Other Script")
 	
 	Main:AddButton("Universal ESP wALLHACK",false,function(value)
 		loadstring(game:HttpGet"https://raw.githubusercontent.com/raw-scriptpastebin/FE/main/UNIVERSAL_ESP")();
@@ -1318,6 +1318,10 @@ Color = Info
         local module = loadstring(game:HttpGet"https://raw.githubusercontent.com/raw-scriptpastebin/FE/main/Server_Hop_Settings")()
 		module:Teleport(game.PlaceId) ;
     end)
+	
+	Main:AddButton("Lazium Hub", function()
+		loadstring(game:HttpGet"https://raw.githubusercontent.com/CheapeeWastaken/Lazium/main/TheMain")();	
+	end)
 	
 	Main:AddLabel("")
 	Main:AddSeperator("Settings")
@@ -1722,6 +1726,8 @@ end)
 	TheMimic:AddSeperator("Scripts")
 	
 	TheMimic:AddButton("The Mimic (Use Inside the Game) [Monster Esp/Door Ecp/Full Bright]", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/NCaKSm3N"))();	
-end)
+		loadstring(game:HttpGet("https://pastebin.com/raw/NCaKSm3N"))();	
+	end)
+
+		
 	--------------------------------------------------------------------
