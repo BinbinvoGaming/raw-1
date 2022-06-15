@@ -1124,6 +1124,9 @@ Color = Info
 	local PhantomForces = RenUi:AddTab("Phantom Forces","")
 	local KAT = RenUi:AddTab("Knife Ability Test","")
 	local TheMimic = RenUi:AddTab("The MIMIC","")
+	local RoGhoul = RenUi:AddTab("Ro-Ghoul","")
+	local Apeirophobia = RenUi:AddTab("Apeirophobia","")
+	
     --------------------------------------------------------------------
 	
 	
@@ -1164,6 +1167,16 @@ Color = Info
 	--------------------------------------------------------------------
 	Main:AddButton("ESP + Auto Aim + Hud Button: [P]",false,function(value)
 		loadstring(game:HttpGet"https://raw.githubusercontent.com/raw-scriptpastebin/FE/main/Wallhack_Aim_Esp_Hud",false)()
+	end)
+	
+	Main:AddButton("Bone ESP Universal", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/TheNuggetEater05/ekaMiffutSmodnaR/main/GlobalR6SkeletonESP.lua"))()
+
+shared.BoneESP_Settings = {
+    Circle_Visible = false,
+    Circle_Radius = 3,
+    BoneESP_Color = Color3.fromRGB(255,255,255)
+};	
 	end)
 	--------------------------------------------------------------------
 	Main:AddButton("Walk Speed 80%",function()
@@ -1728,6 +1741,23 @@ end)
 	TheMimic:AddButton("The Mimic (Use Inside the Game) [Monster Esp/Door Ecp/Full Bright]", function()
 		loadstring(game:HttpGet("https://pastebin.com/raw/NCaKSm3N"))();	
 	end)
-
-		
+	
+	TheMimic:AddButton("NoWMoN x KTollT", function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/KTollT/NewGUI/main/README.md'))();	
+	end)
 	--------------------------------------------------------------------
+	RoGhoul:AddSeperator("Scripts")
+	
+	RoGhoul:AddButton("Ro-Ghoul Script", function()
+    loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/z4gs/scripts/master/Ro-Ghoul%20Auto%20Farm.lua")))();	
+end)
+
+RoGhoul:AddButton("Ro-Ghoul Main", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/JRL-lav/Main/main/Ro-Ghoul"))();	
+end)
+	--------------------------------------------------------------------
+	Apeirophobia:AddSeperator("Scripts")
+	
+	Apeirophobia:AddButton("Apeirophobia 1 Script", function()
+		loadstring(game:HttpGet("https://soggyhubv2.vercel.app"))();
+	end)
