@@ -6,7 +6,7 @@ local thumbSize = Enum.ThumbnailSize.Size420x420
 local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
 
 game:GetService("StarterGui"):SetCore("SendNotification",{  
-Title = "B Genesis | V 1.2",     
+Title = "BinbinvoGaming  | V 1.2",     
 Text = player.Name,
 Icon = content,
 Duration = 10,
@@ -1107,13 +1107,12 @@ Color = Info
 	
 	
     --------------------------------------------------------------------
-    local RenUi = library:AddWindow("      B Genesis | V 1.2",Enum.KeyCode.Insert)
+    local RenUi = library:AddWindow("      BinbinvoGaming | V 1.2",Enum.KeyCode.Insert)
     --------------------------------------------------------------------
     local Main = RenUi:AddTab("Main","")
     local BloxFruit = RenUi:AddTab("Blox Fruit","")
 	local PetSimX = RenUi:AddTab("Pet Simulator X","")
-	local KingLegacy = RenUi:AddTab("King Legacy","")
-	local ShindoLife = RenUi:AddTab("Shindo Life","")
+	local KingLegacy = RenUi:AddTab("King Legacy",""
 	local Parkour = RenUi:AddTab("Parkour","")
 	local Arsenal = RenUi:AddTab("Arsenal","")
 	local DaHood = RenUi:AddTab("Da Hood","")
@@ -1162,7 +1161,7 @@ Color = Info
 	Main:AddSeperator("Other Script")
 	
 	Main:AddButton("Universal ESP wALLHACK",false,function(value)
-		loadstring(game:HttpGet"https://raw.githubusercontent.com/raw-scriptpastebin/FE/main/UNIVERSAL_ESP")();
+		game:Shutdown()
 	end)
 	--------------------------------------------------------------------
 	Main:AddButton("ESP + Auto Aim + Hud Button: [P]",false,function(value)
@@ -1313,10 +1312,7 @@ shared.BoneESP_Settings = {
 	--------------------------------------------------------------------
 	
 	Main:AddButton("[COPY] Discord Server",function()
-        setclipboard("https://discord.gg/BGTc7A7YyE") ;
-    end)
-	Main:AddButton("[COPY] Facebook Group",function()
-        setclipboard("https://www.facebook.com/groups/5093376977421920") ;
+        setclipboard("https://discord.gg/m7m5fZDPjb") ;
     end)
 	
 	Main:AddButton("FPS Boost",function()
@@ -1331,10 +1327,6 @@ shared.BoneESP_Settings = {
         local module = loadstring(game:HttpGet"https://raw.githubusercontent.com/raw-scriptpastebin/FE/main/Server_Hop_Settings")()
 		module:Teleport(game.PlaceId) ;
     end)
-	
-	Main:AddButton("Lazium Hub", function()
-		loadstring(game:HttpGet"https://raw.githubusercontent.com/CheapeeWastaken/Lazium/main/TheMain")();	
-	end)
 	
 	Main:AddLabel("")
 	Main:AddSeperator("Settings")
@@ -1353,6 +1345,16 @@ shared.BoneESP_Settings = {
 	
 	--------------------------------------------------------------------
 	BloxFruit:AddSeperator("Scripts")
+	
+	BloxFruit:AddButton("BinbinvoGaming Hub Pc", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/BinbinvoGaming/BinbinvoGamingCommmunty/main/Blox%20Fruits'))()
+end)
+	BloxFruit:AddButton("BountyFarm", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/BinbinvoGaming/DeletedUserCode/main/BloxFruit/BountyFarm/Loader'))()
+end)
+	BloxFruit:AddButton("BinbinvoGaming Hub", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/BinbinvoGaming/DeletedUserCode/main/BloxFruits/LoaderNew'))()
+end)
 	
 	BloxFruit:AddButton("Auto Farm Chest", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Cesare0328/my-scripts/main/fxss%20bf.lua"))();
@@ -1413,10 +1415,6 @@ BloxFruit:AddButton("Ren Hub Mobile", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/SHAREHACK/bloxfruit/main/free'))();
 end)
 
-BloxFruit:AddButton("Ren Hub PC/Mobile", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/SHAREHACK/script/main/renhuball'))();
-end)
-
 BloxFruit:AddButton("NetNa Hub", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/NinoGod/NetnaYay/8d21ce23346c500c93bb8b4a71f7791e4058a70b/startload.lua'))();
 end)
@@ -1435,10 +1433,6 @@ end)
 
 BloxFruit:AddButton("SG 195", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/SG1975/main/hohoPJ.lua'))();
-end)
-
-BloxFruit:AddButton("Aaryn's Hub", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/jE85VHx8", true))();	
 end)
 	
 	--------------------------------------------------------------------
